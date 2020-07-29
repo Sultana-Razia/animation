@@ -1,0 +1,174 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.box{
+	height: 150px;
+	width: 150px;
+	background: red;
+	border-radius: 50%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	animation: walking 4s infinite;
+}
+@keyframes walking{
+	0%{
+		top: 0px;
+		left: 0px;
+	}
+	25%{
+		top: 0px;
+		left: 89%;
+		background: cyan;
+	}
+	50%{
+		top: 75%;
+		left: 89%;
+		background: yellow;
+	}
+	75%{
+		top: 75%;
+		left: 0px;
+		background: pink;
+	}
+	100%{
+		top: 0px;
+		left: 0px;
+	}
+}
+
+.ball{
+	height: 200px;
+	width: 200px;
+	margin: 120px auto;
+	position: relative;
+}
+.ball .box-1{
+	height: 50px;
+	width: 50px;
+	background: red;
+	border-radius: 50%;
+	animation: loader1 3s infinite;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.ball .box-2{
+	height: 50px;
+	width: 50px;
+	background: green;
+	border-radius: 50%;
+	animation: loader2 3s infinite;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.ball .box-3{
+	height: 50px;
+	width: 50px;
+	background: blue;
+	border-radius: 50%;
+	animation: loader3 3s infinite;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.ball .box-4{
+	height: 50px;
+	width: 50px;
+	background: yellow;
+	border-radius: 50%;
+	animation: loader4 3s infinite;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+@keyframes loader1{
+	0%{
+		top: 0px;
+		left: 0px;
+	}
+	25%{
+		top: 0px;
+		left: 100px;
+	}
+	50%{
+		top: 100px;
+		left: 100px;
+	}
+	75%{
+		top: 100px;
+		left: 0px;
+	}
+	100%{
+		top: 0px;
+		left: 0px;
+	}
+}
+@keyframes loader2{
+	0%{
+		top: 0px;
+		right: 0px;
+	}
+	25%{
+		top: 100px;
+		right: 0px;
+	}
+	50%{
+		top: 100px;
+		right: 100px;
+	}
+	75%{
+		top: 0px;
+		right: 100px;
+	}
+	100%{
+		top: 0px;
+		right: 0px;
+	}
+}
+@keyframes loader3{
+	0%{
+		bottom: 0px;
+		right: 0px;
+	}
+	25%{
+		bottom: 0px;
+		right: 100px;
+	}
+	50%{
+		bottom: 100px;
+		right: 100px;
+	}
+	75%{
+		bottom: 100px;
+		right: 0px;
+	}
+	100%{
+		bottom: 0px;
+		right: 0px;
+	}
+}
+@keyframes loader4{
+	0%{
+		bottom: 0px;
+		left: 0px;
+	}
+	25%{
+		bottom: 100px;
+		left: 0px;
+	}
+	50%{
+		bottom: 100px;
+		left: 100px;
+	}
+	75%{
+		bottom: 0px;
+		left: 100px;
+	}
+	100%{
+		bottom: 0px;
+		left: 0px;
+	}
+}
